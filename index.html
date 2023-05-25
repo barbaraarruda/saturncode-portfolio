@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>saturn code</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="header">
@@ -16,7 +19,6 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Skills</a></li>
-                <li><a href="#">Serviços</a></li>
                 <li><a href="#">Portfólio</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
@@ -31,20 +33,49 @@
 <div id="sobre">
     <div class="container">
         <div class="row">
-            <div class="about-col-1">
+            <div class="sobre-col-1">
                 <img src="img/saturncode logo/girlonsaturn.png" alt="imagem contendo o rosto de uma programadora no espaço observando as estrelas, representando o codinome saturncode">
             </div>
-            <div class="about-col-2">
+            <div class="sobre-col-2">
                 <h1 class="subtitulo">Sobre</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eos unde commodi amet deleniti perferendis voluptatum dolorem asperiores! Quis nesciunt molestiae accusamus omnis laborum numquam deleniti molestias facilis dolorum ducimus!</p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links active-link">Serviços</p>
-                    <p class="tab-links active-link">Portólio</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Educação')">Educação</p>
+                    <p class="tab-links" onclick="opentab('Reconhecimentos')">Reconhecimentos</p>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span></span></li>
+                        <li><span>Desenvolvimento Web</span><br>Criação de aplicações web/app/sites.</li>
+                        <li><span>Desenvolvimento Back-End</span><br>Criação de sistemas.</li>
+                        <li><span>Desenvolvimento Mobile</span><br>Criação de aplicações mobile.</li>
+                        <li><span>Legal Tech</span><br>Consultoria sobre Direito Digital.</li>
+                        <li><span>Ciência da Informação</span><br>Consultoria sobre Gestão da Informação.</li>
+                     
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Educação">
+                    <ul>
+                        <li><span>2023 - em andamento</span><br>Bacharelanda em Engenharia da Computação - UniAmérica/Descomplica.</li>
+                        <li><span>2022 - em andamento</span><br>Técnico em Desenvolvimento Web e Mobile - Escola do Futuro do Estado de Goiás.</li>
+                        <li><span>2022</span><br>Especialização em Direito Digital e Gestão de Inovação - UniAmérica.</li>
+                        <li><span>2021</span><br>Bacharelado em Direito - Universidade Salgado de Oliveira.</li>
+                        <li><span>2019</span><br>Bacharelado em Biblioteconomia - Universidade Federal de Goiás.</li>
+                   
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Reconhecimentos">
+                    <ul>
+                        <li><span>Techstars Startup Weekend Goiânia 2023</span><br>2º lugar, medalha de prata - Founder da TechAssistive.</li>
+                        <li><span>Olimpíada Nacional de Ambientes Marinhos e Polares(PolarOn) 2021</span><br>1º lugar, medalha de ouro.</li>
+                        <li><span>Olimpíada Nacional de Ambientes Marinhos e Polares (PolarOn) 2021</span><br>Medalha extra honorífica.</li>
+                        <li><span>Embaixadora da Cidadania do Estado de Goiás 2020</span><br>2º Lugar - Criadora do Projeto Serendipidade.</li>
+                        <li><span>NASA GALACTIC PROBLEM-SOLVER 2020</span><br>Reconhecimento pelos esforços para enfrentar os desafios na Terra e no espaço.</li>
+                        <li><span>NASA GLOBAL PROBLEM-SOLVER 2020 </span><br>Agradecimento especial pelos esforços para enfrentar os desafios relacionados ao COVID-19.</li>
+                     
+
                     </ul>
                 </div>
             </div>
@@ -52,6 +83,18 @@
         </div>
     </div>
 </div>
+<!------------------------------------------------serviços-------------------------------------------------------------->
+<div id="serviços">
+    <div class="container">
+        <h1 class="subtitulo">Skills</h1>
+        <div class="skills-list">
+            
+        </div>
+    </div>
+</div>
+
+
+<script src="js/js.js"></script>
     
 </body>
 </html>
