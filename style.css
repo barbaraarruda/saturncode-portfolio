@@ -4,6 +4,9 @@
     font-family:'Wix Madefor Display', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: black;
@@ -325,6 +328,9 @@ form .btn2{
     }
 }
 /*inicia a sessão de responsividade*/
+nav .fas{
+    display: none;   
+}
 @media only screen and (max-width: 600px){
     .header-text{
         margin-top: 100%;
@@ -332,5 +338,52 @@ form .btn2{
     }
     .header-text h1{
         font-size: 30px;
+    }
+    nav .fas{
+        display: block;  
+        font-size: 25px;     
+    }
+    nav ul{
+        background: #8C52FF;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitulo{
+        font-size: 40px;
+    }
+    .sobre-col-1, .sobre-col-2{
+        flex-basis: 100%;
+    }
+    .sobre-col-1{
+        margin-bottom: 30px;
+    }
+    .sobre-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contato-esquerda, .contato-direita{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
     }
 }

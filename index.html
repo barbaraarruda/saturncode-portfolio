@@ -16,15 +16,15 @@
     <div class="container">
         <nav>
             <img src="img/saturncode logo/saturn.gif" alt="logotipo com animação" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
-                <i class="fa-solid fa-xmark"></i>
+            <ul id="menulateral">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#serviços">Serviços</a></li>
+                <li><a href="#portfólio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Developer | Legal Tech</p>
@@ -41,7 +41,7 @@
             </div>
             <div class="sobre-col-2">
                 <h1 class="subtitulo">Sobre</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eos unde commodi amet deleniti perferendis voluptatum dolorem asperiores! Quis nesciunt molestiae accusamus omnis laborum numquam deleniti molestias facilis dolorum ducimus!</p>
+                <p><i>Olá, sinta-se em casa!</i> Esse é o meu portfólio, eu, <b>mulher goianiense que busca transformar os meus, os seus, os nossos sonhos... com tecnologia!</b> Em busca de novas oportunidades e sonhos, <b>estou em transição de carreira</b> da área jurídica para área da tecnologia. Conheça um pouco da minha trajetória clicando nas opções a seguir: skills, educação e reconhecimentos. Sou estudante e nas horas vagas, sou streamer dos meus estudos e do meu avanço na área tech. <i>Nas horas vagas adoro ler, ouvir música e assistir doramas!</i></p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('Educação')">Educação</p>
@@ -65,6 +65,7 @@
                         <li><span>2022</span><br>Especialização em Direito Digital e Gestão de Inovação - UniAmérica.</li>
                         <li><span>2021</span><br>Bacharelado em Direito - Universidade Salgado de Oliveira.</li>
                         <li><span>2019</span><br>Bacharelado em Biblioteconomia - Universidade Federal de Goiás.</li>
+                        <li><span>2018</span><br>Certificação em Estatística não paramétrica - Universidade de São Paulo.</li>
                    
 
                     </ul>
@@ -94,26 +95,26 @@
             <div>
                 <i class="fa-solid fa-code"></i> 
                 <h2>Desenvolvimento Web e Sistemas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, nihil voluptatum voluptatem possimus excepturi cumque, dolorum tempore modi alias beatae eaque, voluptates eligendi ea fugit? Perferendis obcaecati ullam aliquam?</p>
-                <a href="#">Saiba mais</a>
+                <p>Desenvolvimento Web e de Sistemas utilizando: HTML, CSS, JavaScript, Bootstrap, Python, Django, Java, MySQL, MongoDB, Docker, CSharp. Experiente com os sistemas operacionais: Linux (Kali, Debian, Ubuntu, Zorin OS) e Windows. </p>
+                <a href="#portfólio">Saiba mais</a>
             </div>
             <div>
                 <i class="fa-brands fa-google-play"></i>
                 <h2>Desenvolvimento Mobile</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, nihil voluptatum voluptatem possimus excepturi cumque, dolorum tempore modi alias beatae eaque, voluptates eligendi ea fugit? Perferendis obcaecati ullam aliquam?</p>
-                <a href="#">Saiba mais</a>
+                <p>Desenvolvimento mobile focado em Android. Aprimorando os estudos em Android e iOS.</p>
+                <a href="#portfólio">Saiba mais</a>
             </div>
             <div>
                 <i class="fa-solid fa-scale-balanced"></i>
                 <h2>Legal Tech</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, nihil voluptatum voluptatem possimus excepturi cumque, dolorum tempore modi alias beatae eaque, voluptates eligendi ea fugit? Perferendis obcaecati ullam aliquam?</p>
-                <a href="#">Saiba mais</a>
+                <p>Possui especialização em Direito Digital e Gestão de Inovação, além de estudos, artigos e audiências jurídicas sobre: Law Tech, Direito Privado, Direito Público.</p>
+                <a href="#portfólio">Saiba mais</a>
             </div>
             <div>
-                <i class="fa-solid fa-memo-circle-info"></i>
+                <i class="fa-solid fa-atom"></i>
                 <h2>Ciência da informação</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam explicabo, nihil voluptatum voluptatem possimus excepturi cumque, dolorum tempore modi alias beatae eaque, voluptates eligendi ea fugit? Perferendis obcaecati ullam aliquam?</p>
-                <a href="#">Saiba mais</a>
+                <p>Possui experiência e pesquisas publicadas na área. Conhecimento sobre catalogação, classificação e indexação. Artigos publicados na área de Inteligência Artificial, Machine Learning e Data Science. Utiliza Python, NumPy, Scikit-Learn, MatPlotLib e Jupyter.</p>
+                <a href="#portfólio">Saiba mais</a>
             </div>
         </div>
     </div>
@@ -143,7 +144,7 @@
                 <img src="img/juridico.jpg" alt="">
                 <div class="layer">
                     <h3>Legal Tech</h3>
-                    <p>Consultorias em Direito Digital. Publicações de artigos sobre Law Tech (em andamento)</p>
+                    <p>Consultorias em Direito Digital. Publicações de artigos sobre Law Tech, Direito Público e Privado</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -156,7 +157,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">Ver mais</a>
+        <a href="https://linktr.ee/saturncode" class="btn">Ver mais</a>
     </div>
 </div>
 <!-------------------------------------------------------------Contato------------------------------------------------------------------------------------------------->
@@ -175,10 +176,10 @@
                 <a href="https://linktr.ee/saturncode" class="btn btn2">Saiba mais</a>              
             </div>
             <div class="contato-direita">
-                <form>
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu email" required>
-                    <textarea name="message" rows="6" placeholder="Sua mensagem"></textarea>
+                <form action="https://formsubmit.co/tosaturncode@gmail.com" method="POST">
+                    <input type="text" name="Nome" placeholder="Seu nome" required>
+                    <input type="email" name="Email" placeholder="Seu email" required>
+                    <textarea name="Mensagem" rows="6" placeholder="Sua mensagem"></textarea>
                     <button type="submit" class="btn btn2">Enviar</button>
                 </form>
             </div>
